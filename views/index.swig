@@ -83,7 +83,7 @@
 
 <section class="comment_ca_marche">
 	<div class="container">
-		<h1>Comment çà marche ?</h1>
+		<h1>Comment ça marche ?</h1>
 
 		<div class="schema">
 
@@ -150,8 +150,8 @@
 			</div>	
 
 			<div class="text text_3">
-				Je reçois des idées repas<br/>
-				selon les alertes date limite consommation<br/>
+				Je reçois des idées de repas<br/>
+				selon les alertes de date limite de consommation<br/>
 				et les alertes énergétiques
 			</div>
 
@@ -175,22 +175,6 @@
 		<h1>Un kit complet</h1>
 
 		<div class="row kits">
-			<div class="column column-3 kit">
-				<img src="/img/kit_ic_1.png">
-				<h4>Enregistrement de vos aliments périssables</h4>
-				<p>
-					par la reconnaissance vocale/image
-				</p>
-			</div>
-
-			<div class="column column-3 kit">
-				<img src="/img/kit_ic_2.png">
-				<h4>Réception d’alertes consommation</h4>
-				<p>
-					24 heures avant la date<br/>
-					de péremption et en cas d’événements anormaux liés à l’énergie
-				</p>
-			</div>
 
 			<div class="column column-3 kit">
 				<img src="/img/kit_ic_3.png">
@@ -202,10 +186,27 @@
 			</div>
 
 			<div class="column column-3 kit">
+				<img src="/img/kit_ic_1.png">
+				<h4>Enregistrement de vos aliments périssables</h4>
+				<p>
+					par la reconnaissance vocale/image
+				</p>
+			</div>
+
+			<div class="column column-3 kit">
 				<img src="/img/kit_ic_4.png">
 				<h4>Réception de pushs idées repas</h4>
 				<p>
 					En fonction des aliments présents dans votre réfrigérateur
+				</p>
+			</div>
+
+			<div class="column column-3 kit">
+				<img src="/img/kit_ic_2.png">
+				<h4>Réception d’alertes consommation</h4>
+				<p>
+					24 heures avant la date<br/>
+					de péremption et en cas d’événements anormaux liés à l’énergie
 				</p>
 			</div>
 
@@ -343,7 +344,7 @@
 <div id="subscribe" class="modalbg">
 	<div class="dialog">
 		<a href="#close" title="Close" class="close">X</a>
-		<h1>Le kit <span class="freshee">freshee</span> sera disponible début 2015.</h1>
+		<h1>Le kit <span class="freshee">freshee</span> sera disponible mi 2015.</h1>
 
 		{% if message == null %}
 			<p>Soyez les premiers informés de sa disponibilité !</p>
