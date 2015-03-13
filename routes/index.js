@@ -8,8 +8,6 @@ var Subscriber = require('../models/Subscriber.js');
 
 //mongoose.connect('mongodb://localhost/freshee');
 
-mongoose.connect('mongodb://104.154.67.102:27017/freshee');
-
 /*****************************/
 /********* home page *********/
 /*****************************/

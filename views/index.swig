@@ -2,13 +2,25 @@
 
 {% block content %}
 
-<section class="header">
-	<div class="nav">
-		<div class="container">
-			<a class="logo" href="/"><img src="/img/logo_freshee_1.png"></a>
+<div class="nav">
+	<div class="container">
+		<div class="row">
+			<div class="column column-6">
+				<a class="logo" href="/">
+					<img src="/img/logo_freshee_1.png">
+				</a>
+			</div>
+			<div class="column column-6">
+				<a href="#subscribe" class="btn btn_precommand">
+					<span class="price">49,90€</span>
+					<span>pré-commander</span>
+				</a>
+			</div>
 		</div>
 	</div>
+</div>
 
+<section class="header">
 	<div class="container">
 		<div class="bonnes_resolutions">
 			<h1>En 2015, j'ai décidé de...</h1>
@@ -24,8 +36,8 @@
 				vos bonnes résolutions
 			</p>
 
-			<a href="#subscribe" class="btn btn_precommand" id="precommand_button">
-				<span class="price">49,90 € ht</span>
+			<a href="#subscribe" class="btn btn_precommand">
+				<span class="price">49,90€</span>
 				<span>pré-commander</span>
 			</a>
 		</div>
@@ -47,13 +59,16 @@
 				<h1>Notre service</h1>
 				<div class="row">
 					<div class="column">
-						<span class="freshee">freshee</span> est un kit qui vous permet de gérer la conservation et la consommation de vos aliments dans votre réfrigérateur.<br/>
+						<img class="freshee" src="../img/logo_freshee_small_span.png"> est un kit qui vous permet de gérer la conservation et la consommation de vos aliments dans votre réfrigérateur.<br/>
 						<br/>
-						Il est composé d’un <span class="highligh">capteur intelligent<span>, des <span class="highligh">pastilles thermosensibles<span>, d’une <span class="highligh">application mobile<span>. 
+						Il est composé d’un <span class="highligh">capteur intelligent</span>, des <span class="highligh">pastilles thermosensibles</span>, d’une <span class="highligh">application mobile</span>. 
 					</div>
-					<div class="column">
-						En France, le gaspillage alimentaire représente 1,2 million de tonnes chaque année<span class="asterisk">*</span>.<br/>
-						Cela représente une <span class="highligh">perte de plus de 400 euros par an et par foyer !</span> 
+					<div class="column" style="padding-top:4px;">
+						En France,<br/>le gaspillage alimentaire est considérable, il représente 1,2 million de tonnes chaque année.<br/>
+						<br/>
+						<p class="jumbo">
+							Cela représente une perte de plus de <span class="highligh">400€&nbsp;par&nbsp;an<span class="asterisk">*</span></span> et par foyer!
+						</p>
 					</div>
 				</div>
 
@@ -70,13 +85,16 @@
 	<div class="container">
 		<h1>Comment çà marche ?</h1>
 
-		<div class="schema start_anim">
+		<div class="schema">
 
 			<svg id="how_step_path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="222px" height="492px" viewBox="0 0 222 492" enable-background="new 0 0 222 492" xml:space="preserve">
+				
 				<path fill="none" stroke="#EAEAE0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="2,6" stroke-dashoffset="0.00" d="
 				M175.7,3c-41.5,57.5-163.5,60-164,132.5c-1.5,128,210.5,65,207.5,188.5c0,94-216.5,97-216.5,165"/>
+				
 				<path id="how_step_path_top" fill="none" stroke="#66cac7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 				M175.7,3c-41.5,57.5-163.5,60-164,132.5c-1.5,128,210.5,65,207.5,188.5c0,94-216.5,97-216.5,165"/>
+
 			</svg>
 
 			<img class="how_1_iconapp_ombre" 		src="/img/how_1_iconapp_ombre.png">
@@ -85,19 +103,23 @@
 			<img class="how_1_plus_2" 				src="/img/how_1_plus.png">
 			<img class="how_1_prise_secteur_ombre" 	src="/img/how_1_prise_secteur_ombre.png">
 			<img class="how_1_prise_secteur"		src="/img/how_1_prise_secteur.png">
-			<img class="how_1_sol_ombre" 			src="/img/how_1_sol_ombre.png">
+			<img class="how_1_sol_ombre" 			src="/img/how_1234_sol_ombre.png">
 			<img class="how_1_thermometre_ombre" 	src="/img/how_1_thermometre_ombre.png">
 			<img class="how_1_thermometre" 			src="/img/how_1_thermometre.png">
 			
-			<img class="how_2_check" 				src="/img/how_2_check.png">
-			<img class="how_2_sol_ombre" 			src="/img/how_2_sol_ombre.png">
+			<img class="how_2_check_1" 				src="/img/how_2_check.png">
+			<img class="how_2_check_2" 				src="/img/how_2_check.png">
+			<img class="how_2_sol_ombre" 			src="/img/how_1234_sol_ombre.png">
 			<img class="how_2_tomate_ombre_1" 		src="/img/how_2_tomate_ombre.png">
 			<img class="how_2_tomate_1" 			src="/img/how_2_tomate.png">
 			<img class="how_2_tomate_ombre_2" 		src="/img/how_2_tomate_ombre.png">
 			<img class="how_2_tomate_2" 			src="/img/how_2_tomate.png">
 			<img class="how_2_tomate_ombre_3" 		src="/img/how_2_tomate_ombre.png">
 			<img class="how_2_tomate_3" 			src="/img/how_2_tomate.png">
-			<img class="how_2_trois_tomates" 		src="/img/how_2_trois_tomates.png">
+			<img class="how_2_milk_ombre" 			src="/img/how_2_milk_ombre.png">
+			<img class="how_2_milk" 				src="/img/how_2_milk.png">
+			<img class="how_2_tomates_text" 		src="/img/how_2_tomates_text.png">
+			<img class="how_2_milk_text" 			src="/img/how_2_milk_text.png">
 			
 			<img class="how_3_alert_background" 	src="/img/how_3_alert_background.png">
 			<img class="how_3_alert_bell" 			src="/img/how_3_alert_bell.png">
@@ -105,19 +127,22 @@
 			<img class="how_3_alert_wave_left_2" 	src="/img/how_3_alert_wave_left_2.png">
 			<img class="how_3_alert_wave_right_1" 	src="/img/how_3_alert_wave_right_1.png">
 			<img class="how_3_alert_wave_right_2" 	src="/img/how_3_alert_wave_right_2.png">
-			<img class="how_3_phone_ombre" 			src="/img/how_3_phone_ombre.png">
-			<img class="how_3_phone" 				src="/img/how_3_phone.png">
-			<img class="how_3_sol_ombre" 			src="/img/how_3_sol_ombre.png">
+			<img class="how_3_phone_ombre_1" 		src="/img/how_3_phone_ombre.png">
+			<img class="how_3_phone_ombre_2" 		src="/img/how_3_phone_ombre.png">
+			<img class="how_3_phone_1" 				src="/img/how_3_phone_1.png">
+			<img class="how_3_temperature_alert" 	src="/img/how_3_temperature_alert.png">
+			<img class="how_3_phone_2" 				src="/img/how_3_phone_2.png">
+			<img class="how_3_sol_ombre" 			src="/img/how_1234_sol_ombre.png">
 			
 			<img class="how_4_couvercle" 			src="/img/how_4_couvercle.png">
 			<img class="how_4_forbidden" 			src="/img/how_4_forbidden.png">
 			<img class="how_4_poubelle_ombre" 		src="/img/how_4_poubelle_ombre.png">
 			<img class="how_4_poubelle" 			src="/img/how_4_poubelle.png">
-			<img class="how_4_sol_ombre" 			src="/img/how_4_sol_ombre.png">
+			<img class="how_4_sol_ombre" 			src="/img/how_1234_sol_ombre.png">
 
 			<div class="text text_1">
 				Je télécharge l’application,<br/>
-				branche la prise et pose mes capteurs
+				branche la prise et pose mes pastilles
 			</div>
 
 			<div class="text text_2">
@@ -125,14 +150,15 @@
 			</div>	
 
 			<div class="text text_3">
-				Je reçois des alertes<br/>
-				selon les dates de péremption,<br/>
-				et les pics énergétiques
+				Je reçois des idées repas<br/>
+				selon les alertes date limite consommation<br/>
+				et les alertes énergétiques
 			</div>
 
 			<div class="text text_4">
 				J’évite le gaspillage<br/>
-				et j’économise de l’argent
+				et j’économise de l’argent<br/>
+				<span class="highligh">jusqu'à 400 € par an et par foyer !</span>
 			</div>
 
 			<img class="img_step_1" src="/img/img_step_1.png">
@@ -162,8 +188,7 @@
 				<h4>Réception d’alertes consommation</h4>
 				<p>
 					24 heures avant la date<br/>
-					de péremption et durant les pics<br/>
-					ou coupures énergétiques
+					de péremption et en cas d’événements anormaux liés à l’énergie
 				</p>
 			</div>
 
@@ -206,7 +231,9 @@
 				Freshee a intégré les préoccupations sociales et environnementales dans ses activités commerciales et ses relations partenariales. Notre politique de responsabilité sociétale des entreprises (RSE) passe par les petits gestes du quotidien qui comptent (ampoules basse consommation, climatisation optimisée, recyclage du papier, fournitures commandées auprès d’entreprises solidaires).
 			</div>
 			<div class="column column-6">
-				Nous sommes adhérent depuis 2009 au Pacte Mondial des Nations Unies. Cella Group s’est engagé à intégrer et à promouvoir les droits de l'homme, les normes internationales du travail et la lutte contre la corruption.
+				<span class="highligh">Le gaspillage alimentaire en quelques chiffres</span><br/>
+				<br/>
+				Le gâchis dans la consommation des ménages représente en France <span class="highligh">20 kg de déchets par an et par personne</span> dont 7 kg de déchets alimentaires non consommés encore emballés. L'Organisation des Nations Unies pour l'alimentation et l'agriculture ou l’Institut de l’eau de Stockholm ont mené des études démontrant que <span class="highligh">jusqu’à 50%</span> de la production alimentaire est gaspillée, perdue ou jetée entre le champ et l’assiette.
 			</div>
 		</div>
 	</div>
@@ -249,7 +276,7 @@
 					<li  class="geste_04">
 						<p>
 							Bien lire les étiquettes et faire<br/>
-							la différence entre la DLC et la DLUO
+							la différence entre la DLC<span class="asterisk">*</span> et la DLUO<span class="asterisk">*</span><span class="asterisk">*</span>
 						</p>
 					</li>
 					<li  class="geste_05">
@@ -290,6 +317,16 @@
 				</ul>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="column column-2">
+				&nbsp;
+			</div>
+			<div class="column column-10">
+				<p class="legend"><span class="asterisk">*</span>La date limite de consommation pour des produits périssables.<p>
+				<p class="legend"><span class="asterisk">*</span><span class="asterisk">*</span>La date limite d'utilisation optimale est une date indiquée sur l'emballage de certaines denrées au-delà de laquelle leurs qualités organoleptiques et nutritionnelles ne sont plus garanties : elles risquent d'avoir moins de goût, moins de vitamines, une consistance différente, sans pour autant constituer un danger pour la santé.</p>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -327,30 +364,43 @@
 	</div>
 </div>
 
+<script type="text/javascript">
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:'   == document.location.protocol ? 'https://ssl'   : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>if (!window.jQuery) { document.write('<script src="/js/jquery/jquery-2.1.3.min.js"><\/script>'); }
 </script>
 
 <script type="text/javascript">
-  function supports_input_placeholder()
-  {
-    var i = document.createElement('input');
-    return 'placeholder' in i;
-  }
+	function supports_input_placeholder() {
+		var i = document.createElement('input');
+		return 'placeholder' in i;
+	}
 
-  if(!supports_input_placeholder()) {
-    var fields = document.getElementsByTagName('INPUT');
-    for(var i=0; i < fields.length; i++) {
-      if(fields[i].hasAttribute('placeholder')) {
-        fields[i].defaultValue = fields[i].getAttribute('placeholder');
-        fields[i].onfocus = function() { if(this.value == this.defaultValue) this.value = ''; }
-        fields[i].onblur = function() { if(this.value == '') this.value = this.defaultValue; }
-      }
-    }
-  }
+	if (!supports_input_placeholder()) {
+		var fields = document.getElementsByTagName('INPUT');
+		for (var i=0; i < fields.length; i++) {
+			if (fields[i].hasAttribute('placeholder')) {
+				fields[i].defaultValue = fields[i].getAttribute('placeholder');
+				fields[i].onfocus = function() { if(this.value == this.defaultValue) this.value = ''; }
+				fields[i].onblur = function() { if(this.value == '') this.value = this.defaultValue; }
+			}
+		}
+	}
 </script>
 
-<!--script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+
+<!--
+https://greensock.com/timelinelite
+https://greensock.com/docs/#/HTML5/GSAP/TimelineLite/
+-->
 
 <script>
 
