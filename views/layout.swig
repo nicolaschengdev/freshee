@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
 
-  <title>{{ title }}</title>
+  <title>Freshee</title>
 
   <meta name="robots" content = "index, follow, noodp" />
   <meta name="googlebot" content="index, follow, noodp" />
@@ -15,6 +15,9 @@
   <meta name="author" content="Freshee">
   <meta name="revisit-after" content="2 days" />
   <meta name="google" content="notranslate" />
+
+  <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">

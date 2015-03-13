@@ -855,6 +855,8 @@ section.footer .copyright {
 	height: 80px;
 	margin-bottom: -25px;
 	text-indent: 172px;
+	overflow: hidden;
+	display: inline-block;
 }
 
 .dialog p {

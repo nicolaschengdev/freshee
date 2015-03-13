@@ -6,7 +6,7 @@ var validator = require('validator');
 var mongoose = require('mongoose');
 var Subscriber = require('../models/Subscriber.js');
 
-//mongoose.connect('mongodb://localhost/freshee');
+mongoose.connect('mongodb://localhost/freshee');
 
 /*****************************/
 /********* home page *********/
