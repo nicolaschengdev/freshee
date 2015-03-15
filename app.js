@@ -8,14 +8,14 @@ var swig = require('swig');
 var session = require('express-session');
 var flash = require('connect-flash');
 
-var mongoose_connection_str = 'mongodb://127.0.0.1:27017/freshee';
+var db_connection_str = 'mongodb://127.0.0.1:27017/freshee';
 
 var args = process.argv.slice(2);
 if (args && args.length > 0) {
-    mongoose_connection_str = args[0];
+    db_connection_str = args[0];
 }
 
-var routes = require('./routes/index')(mongoose_connection_str);
+var routes = require('./routes/index')(db_connection_str);
 
 var app = express();
 

@@ -10,9 +10,11 @@ var Subscriber = require('../models/Subscriber.js');
 /********* home page *********/
 /*****************************/
 
-module.exports = function(mongoose_connection_str) {
+module.exports = function(db_connection_str) {
 
-	mongoose.connect(mongoose_connection_str);
+	console.log('db_connection_str =', db_connection_str);
+
+	mongoose.connect(db_connection_str);
 
 	router.get('/', function(req, res, next) {
 		var data = {
