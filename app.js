@@ -83,10 +83,12 @@ app.use(function(err, req, res, next) {
     });
 });
 
+/*
 if (app.locals.ENV_DEVELOPMENT == true) {
     module.exports = app;    
 } else {
     app.listen(3000);
 }
+*/
 
-
+app.listen(80);
