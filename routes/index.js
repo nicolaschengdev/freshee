@@ -6,56 +6,58 @@ var validator = require('validator');
 var mongoose = require('mongoose');
 var Subscriber = require('../models/Subscriber.js');
 
-mongoose.connect('mongodb://localhost/freshee');
-
 /*****************************/
 /********* home page *********/
 /*****************************/
 
-router.get('/', function(req, res, next) {
-	var data = {
-		email: req.flash('email'),
-		message_type: req.flash('message_type'),
-		message: req.flash('message')
-	};
+module.exports = function(mongoose_connection_str) {
 
-	res.render('index', data);
-});
+	mongoose.connect(mongoose_connection_str);
 
-router.post('/', function(req, res, next) {
-  var email = req.body.email;
-  var debug = req.body.debug;
-  var isEmail = validator.isEmail(email);
-  var isDebug = debug === 'true';
+	router.get('/', function(req, res, next) {
+		var data = {
+			email: req.flash('email'),
+			message_type: req.flash('message_type'),
+			message: req.flash('message')
+		};
 
-  req.flash('email', email);
-
-  if (isEmail) {
-	var visitor = new Subscriber();
-	
-	if (isDebug) {
-		visitor.email = "[DEBUG]:" + email;
-	} else {
-		visitor.email = email;
-	}
-	
-	visitor.save(function (err) {
-		if (!err) {
-			req.flash('message', 'L\'équipe de Freshee vous remercie de votre intérêt.');
-  			req.flash('message_type', 'info');
-		} else {
-			req.flash('message', 'Oups. Une erreur est survenue. Votre email n\'a pas pu être sauvegardé.');
-  			req.flash('message_type', 'error');
-		}
-		res.redirect('/#subscribe');
+		res.render('index', data);
 	});
-  } else {  
-  	var error = 'L\'adresse email est invalide.';
-  	req.flash('message', 'Erreur: ' + error);
-  	req.flash('message_type', 'error');
-  	res.redirect('/#subscribe');
-  }
 
-});
+	router.post('/', function(req, res, next) {
+		var email = req.body.email;
+		var debug = req.body.debug;
+		var isEmail = validator.isEmail(email);
+		var isDebug = debug === 'true';
 
-module.exports = router;
+		req.flash('email', email);
+
+		if (isEmail) {
+			var visitor = new Subscriber();
+
+			if (isDebug) {
+				visitor.email = "[DEBUG]:" + email;
+			} else {
+				visitor.email = email;
+			}
+
+			visitor.save(function (err) {
+				if (!err) {
+					req.flash('message', 'L\'équipe de Freshee vous remercie de votre intérêt.');
+					req.flash('message_type', 'info');
+				} else {
+					req.flash('message', 'Oups. Une erreur est survenue. Votre email n\'a pas pu être sauvegardé.');
+					req.flash('message_type', 'error');
+				}
+				res.redirect('/#subscribe');
+			});
+		} else {  
+			var error = 'L\'adresse email est invalide.';
+			req.flash('message', 'Erreur: ' + error);
+			req.flash('message_type', 'error');
+			res.redirect('/#subscribe');
+		}
+	});
+
+	return router;
+}

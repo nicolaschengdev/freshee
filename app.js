@@ -8,7 +8,14 @@ var swig = require('swig');
 var session = require('express-session');
 var flash = require('connect-flash');
 
-var routes = require('./routes/index');
+var mongoose_connection_str = 'mongodb://127.0.0.1:27017/freshee';
+
+var args = process.argv.slice(2);
+if (args && args.length > 0) {
+    mongoose_connection_str = args[0];
+}
+
+var routes = require('./routes/index')(mongoose_connection_str);
 
 var app = express();
 
@@ -76,6 +83,10 @@ app.use(function(err, req, res, next) {
     });
 });
 
-module.exports = app;
+if (app.locals.ENV_DEVELOPMENT == true) {
+    module.exports = app;    
+} else {
+    app.listen(3000);
+}
 
-//app.listen(3000);
+

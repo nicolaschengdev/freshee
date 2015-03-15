@@ -3,33 +3,32 @@
 {% block content %}
 
 <div class="nav">
-	<div class="container">
-		<div class="row">
-			<div class="column column-6">
-				<a class="logo" href="/">
-					<img src="/img/logo_freshee_1.png">
-				</a>
-			</div>
-			<div class="column column-6">
-				<a href="#subscribe" class="btn btn_precommand">
-					<span class="price">49,90€</span>
-					<span>pré-commander</span>
-				</a>
-			</div>
+	<div class="container_12">
+		<div class="grid_4">
+			<a class="logo" href="/">
+				<img src="/img/logo_freshee_1.png">
+			</a>
 		</div>
+		<div class="grid_8">
+			<a href="#subscribe" class="btn btn_precommand">
+				<span class="price">49,90€</span>
+				<span>pré-commander</span>
+			</a>
+		</div>
+		<div class="clear"></div>
 	</div>
 </div>
 
 <section class="header">
-	<div class="container">
+	<div class="container_12">
 		<div class="bonnes_resolutions">
 			<h1>En 2015, j'ai décidé de...</h1>
 
-			<ul>
-				<li><span class="num">1</span>Réduire le gâchis dans mon réfrigérateur</li>
-				<li><span class="num">2</span>Retrouver le plaisir de cuisiner</li>
-				<li><span class="num">3</span>Manger plus équilibré</li>
-			</ul>
+			<ol>
+				<li>Réduire le gâchis dans mon réfrigérateur</li>
+				<li>Retrouver le plaisir de cuisiner</li>
+				<li>Manger plus équilibré</li>
+			</ol>
 
 			<p>
 				Freshee vous aide à appliquer<br/>
@@ -41,48 +40,51 @@
 				<span>pré-commander</span>
 			</a>
 		</div>
+		<div class="clear"></div>
 	</div>
 </section>
 
 <section class="notre_service">
 
-	<div class="container">
+	<div class="container_12">
 
-		<div class="row">
-			<div class="photo">
-				<img class="logo" src="/img/logo_freshee_2.png">
-				<img class="prise_secteur" src="/img/prise_secteur_1.png">
-				<span class="text">Le capteur<br/>intelligent</span>
-			</div>
+		<div class="photo">
+			<img class="logo" src="/img/logo_freshee_2.png">
+			<img class="prise_secteur" src="/img/prise_secteur_1.png">
+			<span class="text">Le capteur<br/>intelligent</span>
+		</div>
 
-			<div class="description">
-				<h1>Notre service</h1>
-				<div class="row">
-					<div class="column">
-						<img class="freshee" src="../img/logo_freshee_small_span.png"> est un kit qui vous permet de gérer la conservation et la consommation de vos aliments dans votre réfrigérateur.<br/>
-						<br/>
-						Il est composé d’un <span class="highligh">capteur intelligent</span>, des <span class="highligh">pastilles thermosensibles</span>, d’une <span class="highligh">application mobile</span>. 
-					</div>
-					<div class="column" style="padding-top:4px;">
-						En France,<br/>le gaspillage alimentaire est considérable, il représente 1,2 million de tonnes chaque année.<br/>
-						<br/>
-						<p class="jumbo">
-							Cela représente une perte de plus de <span class="highligh">400€&nbsp;par&nbsp;an<span class="asterisk">*</span></span> et par foyer!
-						</p>
-					</div>
+		<div class="description">
+			<h1>Notre service</h1>
+			<div class="row">
+				<div class="column">
+					<img class="freshee" src="../img/logo_freshee_small_span.png"> est un kit qui vous permet de gérer la conservation et la consommation de vos aliments dans votre réfrigérateur.<br/>
+					<br/>
+					Il est composé d’un <span class="highligh">capteur intelligent</span>, des <span class="highligh">pastilles thermosensibles</span>, d’une <span class="highligh">application mobile</span>. 
 				</div>
 
-				<p class="legend">
-					<span class="asterisk">*</span>Étude menée par l'Organisation des Nations Unies pour l'alimentation et l'agriculture</span>
-				</p>
-			</div>
+				<div class="column" style="padding-top:4px;">
+					En France,<br/>le gaspillage alimentaire est considérable, il représente 1,2 million de tonnes chaque année.<br/>
+					<br/>
+					<p class="jumbo">
+						Cela représente une perte de plus de <span class="highligh">400€&nbsp;par&nbsp;an<span class="asterisk">*</span></span> et par foyer!
+					</p>
+				</div>
+				<div class="clear"></div>
+			<div class="row">
+
+			<p class="legend">
+				<span class="asterisk">*</span>Étude menée par l'Organisation des Nations Unies pour l'alimentation et l'agriculture</span>
+			</p>
 		</div>
+
+		<div class="clear"></div>
 	</div>
 
 </section>
 
 <section class="comment_ca_marche">
-	<div class="container">
+	<div class="container_12">
 		<h1>Comment ça marche ?</h1>
 
 		<div class="schema">
@@ -171,51 +173,51 @@
 </section>
 
 <section class="kit_complet">
-	<div class="container">
+	<div class="container_12">
 		<h1>Un kit complet</h1>
 
-		<div class="row kits">
-
-			<div class="column column-3 kit">
-				<img src="/img/kit_ic_3.png">
-				<h4>Pose de capteurs thermosensibles</h4>
-				<p>
-					Pour optimiser la conservation de vos aliments périssables<br/>
-					dans votre réfrigérateur
-				</p>
-			</div>
-
-			<div class="column column-3 kit">
-				<img src="/img/kit_ic_1.png">
-				<h4>Enregistrement de vos aliments périssables</h4>
-				<p>
-					par la reconnaissance vocale/image
-				</p>
-			</div>
-
-			<div class="column column-3 kit">
-				<img src="/img/kit_ic_4.png">
-				<h4>Réception de pushs idées repas</h4>
-				<p>
-					En fonction des aliments présents dans votre réfrigérateur
-				</p>
-			</div>
-
-			<div class="column column-3 kit">
-				<img src="/img/kit_ic_2.png">
-				<h4>Réception d’alertes consommation</h4>
-				<p>
-					24 heures avant la date<br/>
-					de péremption et en cas d’événements anormaux liés à l’énergie
-				</p>
-			</div>
-
+		<div class="grid_3 kit">
+			<img src="/img/kit_ic_3.png">
+			<h4>Pose de capteurs thermosensibles</h4>
+			<p>
+				Pour optimiser la conservation de vos aliments périssables<br/>
+				dans votre réfrigérateur
+			</p>
 		</div>
+
+		<div class="grid_3 kit">
+			<img src="/img/kit_ic_1.png">
+			<h4>Enregistrement de vos aliments périssables</h4>
+			<p>
+				par la reconnaissance vocale/image
+			</p>
+		</div>
+
+		<div class="breakline"></div>
+
+		<div class="grid_3 kit">
+			<img src="/img/kit_ic_4.png">
+			<h4>Réception de pushs idées repas</h4>
+			<p>
+				En fonction des aliments présents dans votre réfrigérateur
+			</p>
+		</div>
+
+		<div class="grid_3 kit">
+			<img src="/img/kit_ic_2.png">
+			<h4>Réception d’alertes consommation</h4>
+			<p>
+				24 heures avant la date<br/>
+				de péremption et en cas d’événements anormaux liés à l’énergie
+			</p>
+		</div>
+
+		<div class="clear"></div>
 	</div>
 </section>
 
 <section class="resume">
-	<div class="container">
+	<div class="container_12">
 		<h1>En résumé</h1>
 		<p>
 			La lutte contre le gaspillage alimentaire est l’affaire de tous.<br/>
@@ -225,38 +227,49 @@
 </section>
 
 <section class="dev_durable">
-	<div class="container">
+	<div class="container_12">
 		<h1>Développement durable</h1>
 		<div class="row">
-			<div class="column column-6">
+			<div class="grid_6">
 				Freshee a intégré les préoccupations sociales et environnementales dans ses activités commerciales et ses relations partenariales. Notre politique de responsabilité sociétale des entreprises (RSE) passe par les petits gestes du quotidien qui comptent (ampoules basse consommation, climatisation optimisée, recyclage du papier, fournitures commandées auprès d’entreprises solidaires).
 			</div>
-			<div class="column column-6">
+			<div class="grid_6">
 				<span class="highligh">Le gaspillage alimentaire en quelques chiffres</span><br/>
 				<br/>
 				Le gâchis dans la consommation des ménages représente en France <span class="highligh">20 kg de déchets par an et par personne</span> dont 7 kg de déchets alimentaires non consommés encore emballés. L'Organisation des Nations Unies pour l'alimentation et l'agriculture ou l’Institut de l’eau de Stockholm ont mené des études démontrant que <span class="highligh">jusqu’à 50%</span> de la production alimentaire est gaspillée, perdue ou jetée entre le champ et l’assiette.
 			</div>
+			<div class="clear"></div>
 		</div>
 	</div>
 </section>
 
 <section class="petits_gestes">
-	<div class="container">
+	<div class="container_12">
 		<h1>Des petits gestes qui comptent</h1>
 
-		<div class="row">
-			<div class="column"><img src="/img/logo_antigaspi.png"></div>
-			<div class="column desc">
-				Le kit Freshee vous permet d’éviter le gaspillage alimentaire. D’autres réflexes sont à adopter.<br/>
+		<div class="row message">
+			<div class="grid_2">
+				<img src="/img/logo_antigaspi.png">
+			</div>
+			
+			<div class="grid_8 desc">
+				Le kit Freshee vous permet d’éviter le gaspillage alimentaire.<br/>
+				D’autres réflexes sont à adopter.<br/>
+				<br/>
 				Le ministère délégué à l’Agroalimentaire a établi une liste des petits gestes qui comptent.
 			</div>
-			<div class="column"><img src="/img/logo_ministere.png"></div>
+			
+			<div class="grid_2">
+				<img src="/img/logo_ministere.png">
+			</div>
+
+			<div class="clear"></div>
 		</div>
 
 		<h1 class="highligh">Les dix gestes antigaspi</h1>
 
 		<div class="row gestes">
-			<div class="column column-6">
+			<div class="grid_6">
 				<ul>
 					<li class="geste_01">
 						<p>
@@ -289,7 +302,7 @@
 				</ul>
 			</div>
 
-			<div class="column column-6">
+			<div class="grid_6">
 				<ul>
 					<li class="geste_06">
 						<p>Congeler pour mieux conserver ses aliments</p>
@@ -317,27 +330,26 @@
 					</li>					
 				</ul>
 			</div>
+
+			<div class="clear"></div>
 		</div>
 
 		<div class="row">
-			<div class="column column-2">
-				&nbsp;
-			</div>
-			<div class="column column-10">
+			<div class="grid_10 prefix_2">
 				<p class="legend"><span class="asterisk">*</span>La date limite de consommation pour des produits périssables.<p>
 				<p class="legend"><span class="asterisk">*</span><span class="asterisk">*</span>La date limite d'utilisation optimale est une date indiquée sur l'emballage de certaines denrées au-delà de laquelle leurs qualités organoleptiques et nutritionnelles ne sont plus garanties : elles risquent d'avoir moins de goût, moins de vitamines, une consistance différente, sans pour autant constituer un danger pour la santé.</p>
 			</div>
+			<div class="clear"></div>
 		</div>
 	</div>
 </section>
 
 <section class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="column column-12">
-				<p class="copyright">2015 © Freshee.</p>
-			</div>
+	<div class="container_12">
+		<div class="grid_6 prefix_6">
+			<p class="copyright">2015 © Freshee.</p>
 		</div>
+		<div class="clear"></div>
 	</div>
 </section>
 

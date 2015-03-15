@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width">
 
   <title>Freshee</title>
@@ -20,6 +21,7 @@
   <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
 
   <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/960_12_col.css">
   <link rel="stylesheet" href="/css/style.css">
 
   <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,500,700,300italic|Montserrat:400,700' rel='stylesheet' type='text/css'>

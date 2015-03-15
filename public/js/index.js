@@ -4,14 +4,29 @@
 
 	function ready() {
 		var nav = $( '.nav' ),
-			header = $( 'section.header' );
+			header = $( 'section.header' ),
+			schema = $( '.schema' ),
+			isScrollComputing = false;
 
 		var scrollHandler = function () {
-			setTimeout(function(){
-				var scroll = $(window).scrollTop();
-				var state = scroll >= header.height() - nav.height();
-				nav.toggleClass('scrolled', state);
-			}, 200);
+			if (isScrollComputing == false) {
+				isScrollComputing = true;
+				setTimeout(function(){
+					
+					var scroll = $(window).scrollTop();
+					var state = scroll >= header.height() - nav.height();
+					nav.toggleClass('scrolled', state);
+					isScrollComputing = false;
+
+					if (schema.hasClass('start_anim') == false) {
+						var should = should_start_anim(schema, 0.5);
+
+						if (should)
+							start_anim();
+					}
+
+				}, 200);
+			}
 		};
 
 		$( window ).scroll(scrollHandler);
@@ -48,7 +63,9 @@
 				event.preventDefault();
 			}
 		});
+	}
 
+	function start_anim() {
 		$( '.schema' ).toggleClass('start_anim');
 
 		var how_1_sol_ombre = $('.how_1_sol_ombre'); 
@@ -221,6 +238,41 @@
 		});
 
 		anim_1.play();
+	}
+
+	function should_start_anim(el, ratio) {
+		if (typeof jQuery === "function" && el instanceof jQuery) {
+			el = el[0];
+		}
+
+		var rect = el.getBoundingClientRect();
+
+		var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+		var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+
+		var height = rect.bottom - rect.top;
+		var d = (windowHeight - rect.top) / height;
+
+		return (d >= ratio);
+	}
+
+	function is_element_in_viewport (el) {
+		//special bonus for those using jQuery
+		if (typeof jQuery === "function" && el instanceof jQuery) {
+			el = el[0];
+		}
+
+		var rect = el.getBoundingClientRect();
+
+		var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+		var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+
+		return (
+			rect.top >= 0 &&
+			rect.left >= 0 &&
+			rect.bottom <= windowHeight && /*or $(window).height() */
+			rect.right <= windowWidth /*or $(window).width() */
+		);
 	}
 
 }(window, jQuery));

@@ -14,7 +14,9 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     develop: {
       server: {
-        file: 'bin/www'
+        file: 'bin/www',
+        args: ['mongodb://localhost/freshee'],
+        env: { NODE_ENV: 'development'}
       }
     },
     watch: {

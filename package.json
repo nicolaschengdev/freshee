@@ -1,6 +1,6 @@
 {
-  "name": "new",
-  "version": "0.0.1",
+  "name": "freshee",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
