@@ -168,9 +168,10 @@ section.header .bonnes_resolutions {
 
 section.header .bonnes_resolutions h1 {
 	margin: 0 0 20px 0;
-	font-size: 2.875em;
+	font-size: 1.75em;
 	font-family: sans-serif, 'Roboto';
 	font-weight: 300;
+	width: 70%;
 }
 
 section.header .bonnes_resolutions ol {
@@ -180,12 +181,17 @@ section.header .bonnes_resolutions ol {
 }
 
 section.header .bonnes_resolutions li {
-	font-size: 1.375em;
+	font-size: 1.175em;
 	font-family: sans-serif, 'Roboto';
 	font-weight: 300;
 	color: #24b3af;
+	
 	margin-left: 2em;
 	list-style: none;
+}
+
+section.header .bonnes_resolutions .highligh {
+	font-weight: 700;
 }
 
 section.header .bonnes_resolutions li:before {
@@ -256,7 +262,7 @@ section.notre_service .photo {
 	box-sizing: border-box;
 	background: #fff;
 	width: 280px;
-	height: 360px;
+	height: 320px;
 	float: left;
 	position: relative;
 
@@ -296,7 +302,7 @@ section.notre_service .photo .text {
 section.notre_service .description {
 	box-sizing: border-box;
 	width: 680px;
-	height: 360px;
+	height: 320px;
 	float: left;
 	padding: 30px 10px 0 30px;
 	position: relative;
@@ -306,7 +312,7 @@ section.notre_service .description h1 {
 	font-size: 38px;
 	font-family: sans-serif, 'Roboto';
 	font-weight: 300;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 section.notre_service .description .jumbo {
@@ -482,9 +488,9 @@ section.comment_ca_marche .schema .text .highligh {
 .img_step_3 { top: 440px; left: 494px; z-index: 700; }
 .img_step_4 { top: 660px; left: 290px; z-index: 800; }
 
-.text_1 { top: 108px; left: 126px; z-index: 500; }
-.text_2 { top: 300px; left: 418px; z-index: 600; }
-.text_3 { top: 444px; left: 70px; z-index: 700; }
+.text_1 { top: 74px; left: 0px; z-index: 500; }
+.text_2 { top: 270px; left: 418px; z-index: 600; }
+.text_3 { top: 428px; left: 83px; z-index: 700; }
 .text_4 { top: 664px; left: 402px; z-index: 800; }
 
 .to_step_two #how_step_path_top { 

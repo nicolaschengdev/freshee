@@ -22,17 +22,16 @@
 <section class="header">
 	<div class="container_12">
 		<div class="bonnes_resolutions">
-			<h1>En 2015, j'ai décidé de...</h1>
+			<h1>J'ai décidé d'optimiser la consommation énergétique de mon réfrigérateur pour mieux conserver mes aliments</h1>
 
 			<ol>
-				<li>Réduire le gâchis dans mon réfrigérateur</li>
-				<li>Retrouver le plaisir de cuisiner</li>
-				<li>Manger plus équilibré</li>
+				<li><span class="highligh">Conservation</span> : vous préservez mieux et plus longtemps<br/> vos aliments</li>
+				<li><span class="highligh">Gaspillage</span> : vous réduisez votre gâchis alimentaire</li>
+				<li><span class="highligh">Entretien</span> : vous allongez la durée de vie de votre réfrigérateur</li>
 			</ol>
 
 			<p>
-				Freshee vous aide à appliquer<br/>
-				vos bonnes résolutions
+				Freshee vous facilite le quotidien
 			</p>
 
 			<a href="#subscribe" class="btn btn_precommand">
@@ -58,17 +57,15 @@
 			<h1>Notre service</h1>
 			<div class="row">
 				<div class="column">
-					<img class="freshee" src="../img/logo_freshee_small_span.png"> est un kit qui vous permet de gérer la conservation et la consommation de vos aliments dans votre réfrigérateur.<br/>
-					<br/>
-					Il est composé d’un <span class="highligh">capteur intelligent</span>, des <span class="highligh">pastilles thermosensibles</span>, d’une <span class="highligh">application mobile</span>. 
+					<img class="freshee" src="../img/logo_freshee_small_span.png"> est un kit qui vous permet de rendre votre réfrigérateur intelligent. Ainsi, vous gérez mieux la conservation de vos aliments dans votre réfrigérateur. 
 				</div>
 
 				<div class="column" style="padding-top:4px;">
-					En France,<br/>le gaspillage alimentaire est considérable, il représente 1,2 million de tonnes chaque année.<br/>
-					<br/>
-					<p class="jumbo">
+					En France, le gaspillage alimentaire est considérable, il représente 1,2 million de tonnes chaque année. Cela représente une perte de plus de <span class="highligh">400€ par an<span class="asterisk">*</span> et par foyer !</span>
+
+					<!--p class="jumbo">
 						Cela représente une perte de plus de <span class="highligh">400€&nbsp;par&nbsp;an<span class="asterisk">*</span></span> et par foyer!
-					</p>
+					</p-->
 				</div>
 				<div class="clear"></div>
 			<div class="row">
@@ -85,7 +82,7 @@
 
 <section class="comment_ca_marche">
 	<div class="container_12">
-		<h1>Comment ça marche ?</h1>
+		<h1>Comment Freshee <br/>vous aide au quotidien ?</h1>
 
 		<div class="schema">
 
@@ -143,18 +140,18 @@
 			<img class="how_4_sol_ombre" 			src="/img/how_1234_sol_ombre.png">
 
 			<div class="text text_1">
-				Je télécharge l’application,<br/>
-				branche la prise et pose mes pastilles
+				<h3>Optimisez le réglage de votre réfrigérateur</h3>
+				En fonction de la saison,<br/>l’application vous indique les meilleures températures<br/>pour réaliser des économies d’énergie.
 			</div>
 
 			<div class="text text_2">
-				J’enregistre mes aliments périssables
+				<h3>Améliorez la durée de conservation de vos aliments</h3>
+				Préservez vos aliments dans de meilleures conditions et le plus longtemps possible grâce aux températures optimales.
 			</div>	
 
 			<div class="text text_3">
-				Je reçois des idées de repas<br/>
-				selon les alertes de date limite de consommation<br/>
-				et les alertes énergétiques
+				<h3>Recevez des alertes</h3>
+				En cas d’incident (pic de consommation,<br/>porte ouverte ou coupure électrique),<br/>vous recevrez une alerte sur votre smartphone.
 			</div>
 
 			<div class="text text_4">
@@ -177,15 +174,6 @@
 		<h1>Un kit complet</h1>
 
 		<div class="grid_3 kit">
-			<img src="/img/kit_ic_3.png">
-			<h4>Pose de capteurs thermosensibles</h4>
-			<p>
-				Pour optimiser la conservation de vos aliments périssables<br/>
-				dans votre réfrigérateur
-			</p>
-		</div>
-
-		<div class="grid_3 kit">
 			<img src="/img/kit_ic_1.png">
 			<h4>Enregistrement de vos aliments périssables</h4>
 			<p>
@@ -193,22 +181,37 @@
 			</p>
 		</div>
 
+
+		
+		
+<div class="grid_3 kit">
+			<img src="/img/kit_ic_3.png">
+			<h4>Pose de capteurs thermosensibles</h4>
+			<p>
+				Pour optimiser la conservation de vos aliments périssables dans votre réfrigérateur
+			</p>
+		</div>
+		
+
 		<div class="breakline"></div>
+
+		
+<div class="grid_3 kit">
+			<img src="/img/kit_ic_2.png">
+			<h4>Réception d’alertes consommation</h4>
+			<p>
+				24 heures avant la date de péremption et durant les pics ou coupures énergétiques
+			</p>
+		</div>
+		
+
+		
 
 		<div class="grid_3 kit">
 			<img src="/img/kit_ic_4.png">
 			<h4>Réception de pushs idées repas</h4>
 			<p>
 				En fonction des aliments présents dans votre réfrigérateur
-			</p>
-		</div>
-
-		<div class="grid_3 kit">
-			<img src="/img/kit_ic_2.png">
-			<h4>Réception d’alertes consommation</h4>
-			<p>
-				24 heures avant la date<br/>
-				de péremption et en cas d’événements anormaux liés à l’énergie
 			</p>
 		</div>
 
